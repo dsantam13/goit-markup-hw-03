@@ -10,6 +10,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-text);
+    margin: 0;
 }
 
 a {
@@ -69,6 +70,15 @@ li {
     letter-spacing: 0.03em;
 }
 
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contacts>li:not(:last-child) {
+    margin-right: 50px;
+}
+
 .contact {
     font-style: normal;
     font-weight: 500;
@@ -81,6 +91,13 @@ li {
 .contact:hover,
 .contact:focus {
     color: var(--color-logo);
+}
+
+.container {
+    box-sizing: content-box;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .filter {
@@ -104,12 +121,21 @@ li {
     border-radius: 4px;
 }
 
+.links {
+    display: flex;
+    align-items: center;
+}
+
 .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-title);
+}
+
+.links>li:not(:last-child) {
+    margin-right: 50px;
 }
 
 .link:hover,
@@ -142,6 +168,13 @@ li {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-title);
+}
+
+.pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFF;
 }
 
 .product {
