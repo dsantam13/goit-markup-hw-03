@@ -7,10 +7,14 @@
     --background-filter: #F5F4FA;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--color-text);
-    margin: 0;
+    margin: 0px;
 }
 
 a {
@@ -25,8 +29,38 @@ a:visited {
     color: var(--color-title);
 }
 
+figure,
+h1,
+h2,
+h3,
+p,
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+
 footer {
     background-color: var(--color-background);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+footer>.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+header {
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
+
+header>.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 li {
@@ -39,11 +73,17 @@ li {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--text-banner);
+
+    width: 231px;
+    margin-top: 9px;
+    margin-bottom: 2px;
 }
 
 .banner {
     background-color: var(--color-background);
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .button {
@@ -70,15 +110,6 @@ li {
     letter-spacing: 0.03em;
 }
 
-.contacts {
-    display: flex;
-    align-items: center;
-}
-
-.contacts>li:not(:last-child) {
-    margin-right: 50px;
-}
-
 .contact {
     font-style: normal;
     font-weight: 500;
@@ -93,11 +124,45 @@ li {
     color: var(--color-logo);
 }
 
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.contacts>li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contacts1>.contact {
+    line-height: 1.71;
+}
+
+.contacts1>.contact:not(:last-child) {
+    margin-bottom: 2px;
+}
+
 .container {
-    box-sizing: content-box;
     width: 1200px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+}
+
+.descriptions {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 95px;
+    padding-bottom: 94px;
+}
+
+.descriptions>li {
+    width: 270px;
 }
 
 .filter {
@@ -121,11 +186,6 @@ li {
     border-radius: 4px;
 }
 
-.links {
-    display: flex;
-    align-items: center;
-}
-
 .link {
     font-weight: 500;
     font-size: 14px;
@@ -134,13 +194,20 @@ li {
     color: var(--color-title);
 }
 
-.links>li:not(:last-child) {
-    margin-right: 50px;
-}
-
 .link:hover,
 .link:focus {
     color: var(--color-logo);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+    margin-right: 344px;
+}
+
+.links>li:not(:last-child) {
+    margin-right: 50px;
 }
 
 .logo {
@@ -168,13 +235,8 @@ li {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--color-title);
-}
 
-.pages {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #FFF;
+    margin-bottom: 10px;
 }
 
 .product {
@@ -183,6 +245,19 @@ li {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-title);
+}
+
+.service {
+    padding-bottom: 94px;
+}
+
+.service>.title1 {
+    margin-bottom: 55.05px;
+}
+
+.service>ul {
+    display: flex;
+    justify-content: space-between;
 }
 
 .subtitle {
@@ -194,11 +269,37 @@ li {
     color: var(--color-title);
 }
 
+.subtitle:hover {
+    color: var(--color-text);
+}
+
+.team {
+    background-color: var(--background-filter);
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-cards {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+.team-item {
+    width: 270px;
+    background-color: var(--text-banner);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    padding-bottom: 30px;
+}
+
 .team-person {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+
+    margin-top: 30px;
 }
 
 .text {
@@ -215,6 +316,9 @@ li {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-banner);
+
+    margin-top: 0px;
+    margin-bottom: 30px;
 }
 
 .title1 {
@@ -223,14 +327,5 @@ li {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--color-title)
-}
-
-.title2 {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--color-title)
+    color: var(--color-title);
 }
