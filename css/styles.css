@@ -97,18 +97,22 @@ li {
     text-align: center;
     width: 261px;
     height: 50px;
-    left: 666px;
-    top: 430px;
     background: var(--color-logo);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    border: 0px;
+    padding: 0px;
 }
 
 .category {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
+
+    margin-top: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
 .contact {
@@ -132,6 +136,12 @@ li {
 
 .contacts>li:not(:last-child) {
     margin-right: 50px;
+}
+
+.contacts>li>svg,
+path {
+    margin-right: 10px;
+    align-items: center;
 }
 
 .contacts1 {
@@ -183,6 +193,9 @@ li {
     background-color: var(--background-filter);
     border-radius: 4px;
     cursor: pointer;
+    border: 0px;
+    height: 38px;
+    padding: 0px;
 }
 
 .filter:hover,
@@ -191,6 +204,30 @@ li {
     background: var(--color-logo);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+}
+
+.filters>li:nth-child(1)>.filter {
+    width: 73px;
+}
+
+.filters>li:nth-child(2)>.filter {
+    width: 128px;
+}
+
+.filters>li:nth-child(3)>.filter {
+    width: 145px;
+}
+
+.filters>li:nth-child(4)>.filter {
+    width: 103px;
+}
+
+.filters>li:nth-child(5)>.filter {
+    width: 130px;
+}
+
+.filters>li:not(:last-child) {
+    margin-right: 8px;
 }
 
 .link {
@@ -252,12 +289,21 @@ li {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--color-title);
+
+    margin-bottom: 4px;
 }
 
 .product-item {
+    box-sizing: content-box;
     width: 370px;
     background-color: var(--text-banner);
     border: 1px solid #EEEEEE;
+
+    padding-bottom: 20px;
+}
+
+.product-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products {
