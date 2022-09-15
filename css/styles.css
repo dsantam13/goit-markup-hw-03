@@ -68,6 +68,10 @@ li {
     list-style: none;
 }
 
+nav {
+    display: flex;
+}
+
 .address-text {
     font-style: normal;
     font-size: 14px;
@@ -247,7 +251,6 @@ path {
     display: flex;
     align-items: center;
     margin-left: 93px;
-    margin-right: 344px;
 }
 
 .links>li:not(:last-child) {
